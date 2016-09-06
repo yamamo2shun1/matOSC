@@ -1,6 +1,9 @@
 # matOSC
 subroutine MEX file for uint8 arrays of OSC message in MATLAB.
 
+## Required Add-ons
+[Instrument Control Toolbox](http://jp.mathworks.com/products/instrument/)
+
 ## How to Compile
 `>> mex matOSC.c`
 
