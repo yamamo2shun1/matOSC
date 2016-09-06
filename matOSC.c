@@ -14,7 +14,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with COSC. if not, see <http:/www.gnu.org/licenses/>.
+ * along with matOSC. if not, see <http:/www.gnu.org/licenses/>.
  *
  * macOSC.c,v.0.1.0 2016/09/06
  */
@@ -162,7 +162,7 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
 
   plhs[0] = mxCreateNumericArray(2, dims, mxUINT8_CLASS, mxREAL);
     
-  output_ptr = (mxChar *)mxGetData(plhs[0]);
+  output_ptr = mxGetData(plhs[0]);
   memcpy(output_ptr, sndOSCData, oscTotalSize);
 
   mxFree(prefix_str);
